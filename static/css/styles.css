@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    background-color: #11070a;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Navbar Styling */
+.navbar {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .navbar-brand span {
+    color: #ff4c4c;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #ff4c4c !important;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+
+/* Home Section */
+.home-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/home-background.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* About Section */
+.about {
+    background-color: #2a2a2e;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #1d1d1f;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Blog Section */
+.blog {
+    background-color: #22292e;
+    height: auto;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #333942;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .name {
+        font-size: 50px;
+    }
+
+    .sectionlink {
+        font-size: 18px;
+    }
+
+    .home {
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+    .about,
+    .projects,
+    .blog {
+        padding: 30px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
